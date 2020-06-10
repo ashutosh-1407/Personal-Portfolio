@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  font-family: 'Merriweather', serif;
 }
 
 ul {
@@ -11,7 +12,12 @@ li {
   list-style: none;
   font-size: 1.5rem;
   font-family: 'gotham rounded', 'open-sans', sans-serif;
-  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 a:hover {
@@ -19,15 +25,42 @@ a:hover {
 }
 
 h1 {
-  font-size: 3rem;
+  color: black;
+  margin-bottom: 8px;
 }
 
-h1::after {
+table {
+  width: 30%;
+  margin: 0 auto;
+  line-height: 2;
+  padding-left: 3%;
+}
+
+p {
+  line-height: 2;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: black;
+  margin-top: 0;
+}
+
+.name::after {
   content: '-------'
 }
 
-h1::before {
+.name::before {
   content: '-------'
+}
+
+.bottom-container {
+  margin: 50px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #AACFCF;
 }
 
 .task1 {
@@ -43,20 +76,21 @@ h1::before {
 }
 
 .profile-pic-area {
-  height: 600px;
-  background-color: #66BFBF;
-  /* background-image: image('https://mdn.mozillademos.org/files/7693/catfront.png'); */
+  width: 80%;
+  height: 800px;
+  background-image: url('..\\images\\resized_profile_pic.jpg');
+  margin: 0 auto;
 }
 
 .info {
-  /* left: 30%;
-  top: 10%; */
-  padding-top: 100px;
+  padding-top: 130px;
   color: #EAF6F6;
 }
 
 .heading {
 font-size: 2rem;
+margin: 70px auto;
+background-color: #DEF4F0;
 }
 
 .heading::after {
@@ -71,21 +105,27 @@ font-size: 2rem;
   text-align: left;
   width: 60%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
 .hobbies {
-  background-color: #66BFBF;
+  /* background-color: #66BFBF; */
   padding-top: 15px;
   padding-bottom: 60px;
 }
 
-.bottom-container {
-  margin: 50px auto;
-  /* background-color: #ABF0E9; */
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 15px;
-  padding-bottom: 20px;
+.education {
+  /* background-color: #F4F4F4; */
+  /* width: 50%;
+  margin: 0 auto;
+  text-align: left; */
+}
+
+.school {
+  font-weight: bold;
+}
+
+.skills {
+  text-align: left;
 }
